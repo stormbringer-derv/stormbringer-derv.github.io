@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="The Scofield Wedding">
+</head>
+<body>
 <script type = "text/javascript" >
-	// JavaScript program to illustrate
-	// calculation of no. of days between two date
-
-	// To set two dates to two variables
 	var date1 = new Date("04/30/2022");
 	var date2 = new Date();
 	date2.setHours(0,0,0,0);
-
-// To calculate the time difference of two dates
 var Difference_In_Time = date2.getTime() - date1.getTime();
-
-// To calculate the no. of days between two dates
 var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-
-//To display the final no. of days (result)
 document.write("Total number of days between dates <br>"
 //			+ date1 + "<br> and <br>"
-			+ date2 + " is: <br> "
+//			+ date2 + " is: <br> "
 			+ Difference_In_Days);
 
 </script>
-</head>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<h1>The Scofield Wedding</h1> <h2>Its now over!</h2> <p>We've been married for XXX days and it was wonderful to have you there. Speak soon and give us a call if you need us.  </p> <p>R&amp;M</p>
+<p style="text-align: right"><a href="mailto:info@scofieldwedding.co.uk">message</a></p>
 </body>
 </html>
