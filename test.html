@@ -9,6 +9,10 @@
 	// To set two dates to two variables
 	var date1 = new Date("04/30/2022");
 	var date2 = new Date();
+	
+function dateToEpoch2(date2) {
+   return date2.setHours(0,0,0,0);
+}
 //	var date2 = (date3.getMonth()+1)+'/'+date3.getDate()+'/'+date3.getFullYear(); 
 
 // To calculate the time difference of two dates
@@ -20,7 +24,7 @@ var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 //To display the final no. of days (result)
 document.write("Total number of days between dates <br>"
 //			+ date1 + "<br> and <br>"
-//			+ date2 + " is: <br> "
+			+ dateToEpoch2 + " is: <br> "
 			+ Difference_In_Days);
 
 </script>
